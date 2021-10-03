@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#20F1F2F4"
+    android:textAlignment="center"
+    tools:context=".OutputActivity">
+
+    <TextView
+        android:id="@+id/originalInput"
+        android:layout_width="147dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="76dp"
+        android:background="#FFFFFF"
+        android:text="@string/original_number"
+        android:textColor="#3949AB"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/outputHeader"
+        app:layout_constraintTop_toBottomOf="@+id/outputHeader" />
+
+    <TextView
+        android:id="@+id/originalUnit"
+        android:layout_width="147dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="76dp"
+        android:background="#FFFFFF"
+        android:text="@string/original_unit"
+        android:textColor="#3949AB"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/originalInput"
+        app:layout_constraintTop_toBottomOf="@+id/originalInput" />
+
+    <TextView
+        android:id="@+id/outToUnit"
+        android:layout_width="94dp"
+        android:layout_height="31dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="#5E35B1"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/outOriginalNumber"
+        app:layout_constraintTop_toTopOf="@+id/desiredUnit" />
+
+    <TextView
+        android:id="@+id/desiredUnit"
+        android:layout_width="147dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="76dp"
+        android:background="#FFFFFF"
+        android:text="@string/desired_unit"
+        android:textColor="#3949AB"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/originalInput"
+        app:layout_constraintTop_toBottomOf="@+id/originalUnit" />
+
+    <TextView
+        android:id="@+id/outFromUnit"
+        android:layout_width="94dp"
+        android:layout_height="31dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="#5E35B1"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/outOriginalNumber"
+        app:layout_constraintTop_toTopOf="@+id/originalUnit" />
+
+    <TextView
+        android:id="@+id/convertedUnit"
+        android:layout_width="147dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="76dp"
+        android:background="#FFFFFF"
+        android:text="@string/converted_unit"
+        android:textColor="#3949AB"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/originalInput"
+        app:layout_constraintTop_toBottomOf="@+id/desiredUnit" />
+
+    <TextView
+        android:id="@+id/outputHeader"
+        android:layout_width="340dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="40dp"
+        android:background="#94FFFFFF"
+        android:text="@string/output_title"
+        android:textAlignment="center"
+        android:textColor="@color/teal_700"
+        android:textColorLink="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/outOriginalNumber"
+        android:layout_width="94dp"
+        android:layout_height="31dp"
+        android:text="@string/user_output"
+        android:textAlignment="center"
+        android:textColor="#5E35B1"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/outputHeader"
+        app:layout_constraintTop_toTopOf="@+id/originalInput" />
+
+    <TextView
+        android:id="@+id/convertedValue"
+        android:layout_width="94dp"
+        android:layout_height="31dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="#5E35B1"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/outOriginalNumber"
+        app:layout_constraintTop_toTopOf="@+id/convertedUnit" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Homework Assignment 1</string>
+    <string name="header">Converter App</string>
+    <string name="user_message">Enter your number here</string>
+    <string name="from">From: </string>
+    <string name="to">To: </string>
+    <string name="output_title"> Conversions and Units</string>
+    <string name="original_number"> Original Value</string>
+    <string name="original_unit"> Original Unit</string>
+    <string name="desired_unit"> Desired Unit</string>
+    <string name="converted_unit"> Converted Value</string>
+    <string name="user_output">User Output</string>
+
+    <string name="UserNum" />
+
+
+</resources>
